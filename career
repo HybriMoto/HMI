@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers – HybriMoto India</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="shortcut icon" href="logo.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        heading: ['Michroma', 'sans-serif'],
+                        body: ['Rajdhani', 'sans-serif'],
+                    },
+                }
+            }
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background-color: #000;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .hero-overlay {
+            background: radial-gradient(circle at top, rgba(248,113,113,0.25), transparent 55%);
+        }
+    </style>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-black text-white">
+
+    <!-- NAVBAR -->
+    <header class="navbar fixed top-0 w-full z-50 bg-[#101010] shadow-xl flex justify-between items-center py-4 px-8 lg:px-16">
+        <div class="flex items-center">
+            <a href="index.html"
+               class="logo flex items-center text-white font-bold text-xl no-underline font-heading transition duration-300 hover:text-red-600">
+                <img src="logo.png" alt="HybriMoto India Logo" class="h-10 mr-2">
+                <span>HybriMoto India</span>
+            </a>
+
+            <nav class="nav-links hidden lg:flex ml-12 space-x-8">
+                <a href="index.html"
+                   class="text-white text-sm uppercase p-2 hover:text-red-600 transition duration-300">
+                   HMI BIKE
+                </a>
+
+                <a href="index.html#about-us"
+                   class="text-white text-sm uppercase p-2 hover:text-red-600 transition duration-300">
+                   About Us
+                </a>
+
+                <a href="index.html#meet-the-team"
+                   class="text-white text-sm uppercase p-2 hover:text-red-600 transition duration-300">
+                   Meet the Team
+                </a>
+
+                <a href="career.html"
+                   class="text-white text-sm uppercase p-2 border border-red-700 rounded-md text-red-600 font-semibold transition duration-300">
+                   Careers
+                </a>
+            </nav>
+        </div>
+
+        <div class="flex items-center space-x-4">
+            <a href="#"
+               class="action-button border border-white text-white text-sm uppercase px-4 py-2 rounded-lg hover:bg-white hover:text-black transition duration-300 font-heading">
+               Book A Test Ride
+            </a>
+
+            <a href="#"
+               class="action-button bg-red-700 border border-red-700 text-white text-sm uppercase px-4 py-2 rounded-lg hover:bg-red-800 transition duration-300 font-heading">
+               Book Now
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="pt-28 pb-20 hero-overlay">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-10">
+
+            <div class="lg:w-3/5">
+                <p class="text-sm uppercase tracking-[0.3em] text-red-500 mb-3 font-heading">
+                    Careers at HybriMoto
+                </p>
+
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4 font-heading">
+                    Build the Future of Hybrid Mobility.
+                </h1>
+
+                <p class="text-xl text-gray-300 mb-8">
+                    Join a team pushing India’s first All-Wheel-Drive Hybrid Motorcycle from concept to production.
+                    Work directly with founders on engineering, design, testing, and operations.
+                </p>
+
+                <div class="flex flex-wrap items-center gap-4">
+                    <a href="https://forms.gle/J3LwxiCSYsJf2WwW8" target="_blank"
+                       class="bg-red-700 hover:bg-red-800 text-white text-sm uppercase px-6 py-3 rounded-lg font-heading tracking-wide">
+                        Apply Now
+                    </a>
+
+                    <span class="text-sm text-gray-400">Applications reviewed weekly</span>
+                </div>
+            </div>
+
+            <div class="lg:w-2/5">
+                <div class="border border-red-700 rounded-2xl p-6 bg-[#050505] shadow-xl shadow-red-900/40">
+                    <h2 class="text-xl font-heading mb-3">Why Work With Us?</h2>
+
+                    <ul class="space-y-2 text-gray-300 text-sm">
+                        <li>• Direct work with founders</li>
+                        <li>• Hands-on prototype testing</li>
+                        <li>• End-to-end ownership of features</li>
+                        <li>• Build a product before launch</li>
+                        <li>• Grow in a high-speed environment</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- LIFE AT HYBRIMOTO -->
+    <section class="py-16 bg-black">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10">
+
+            <div>
+                <h2 class="text-3xl font-heading font-bold mb-4">Life at HybriMoto</h2>
+
+                <p class="text-gray-300 mb-4 text-lg">
+                    Expect fast learning, honest feedback, and real impact. We're a hands-on, execution-driven team building future mobility.
+                </p>
+
+                <p class="text-gray-400 text-base">
+                    We value clarity, accountability, and curiosity. Titles matter less than the work you deliver.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-2xl font-heading mb-3">What we look for</h3>
+
+                <ul class="space-y-2 text-gray-300">
+                    <li>• Strong fundamentals</li>
+                    <li>• Ownership of tasks end-to-end</li>
+                    <li>• Comfort working in ambiguity</li>
+                    <li>• Interest in EV & hybrid mobility</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CURRENT OPPORTUNITIES (FULLY UPDATED) -->
+    <section class="py-16 bg-[#050505] border-y border-gray-900">
+        <div class="max-w-6xl mx-auto px-4">
+
+            <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
+                <div>
+                    <h2 class="text-3xl font-heading font-bold mb-2">Current Opportunities</h2>
+
+                    <p class="text-gray-300">
+                        We're hiring across engineering, design, software, and operations.
+                        Select your domain and apply through the form.
+                    </p>
+                </div>
+
+                <a href="https://forms.gle/J3LwxiCSYsJf2WwW8" target="_blank"
+                   class="inline-block bg-red-700 hover:bg-red-800 text-white text-xs md:text-sm uppercase px-5 py-2.5 rounded-lg font-heading">
+                    Fill Application Form
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+
+                <!-- 1 -->
+                <div class="border border-gray-800 rounded-2xl p-5 bg-black/60">
+                    <h3 class="text-lg font-heading mb-1">Industrial & Product Design</h3>
+                    <p class="text-xs uppercase text-red-500 mb-3 tracking-wide">Full-time / Internship</p>
+                    <p class="text-gray-300 text-sm">
+                        Work on concept design, ergonomics, surfaces, and prototype refinement.
+                    </p>
+                </div>
+
+                <!-- 2 -->
+                <div class="border border-gray-800 rounded-2xl p-5 bg-black/60">
+                    <h3 class="text-lg font-heading mb-1">Mechanical & Manufacturing</h3>
+                    <p class="text-xs uppercase text-red-500 mb-3 tracking-wide">Full-time / Internship</p>
+                    <p class="text-gray-300 text-sm">
+                        Support prototyping, chassis design, tolerance checks, and production engineering.
+                    </p>
+                </div>
+
+                <!-- 3 -->
+                <div class="border border-gray-800 rounded-2xl p-5 bg-black/60">
+                    <h3 class="text-lg font-heading mb-1">Mechatronics & Hybrid System</h3>
+                    <p class="text-xs uppercase text-red-500 mb-3 tracking-wide">Full-time / Internship</p>
+                    <p class="text-gray-300 text-sm">
+                        Integrate hybrid powertrain, sensors, controls, and system-level testing.
+                    </p>
+                </div>
+
+                <!-- 4 -->
+                <div class="border border-gray-800 rounded-2xl p-5 bg-black/60">
+                    <h3 class="text-lg font-heading mb-1">Electrical & Electronics</h3>
+                    <p class="text-xs uppercase text-red-500 mb-3 tracking-wide">Full-time / Internship</p>
+                    <p class="text-gray-300 text-sm">
+                        Work on wiring harnesses, PCB integration, EV subsystems, and electronics design.
+                    </p>
+                </div>
+
+                <!-- 5 -->
+                <div class="border border-gray-800 rounded-2xl p-5 bg-black/60">
+                    <h3 class="text-lg font-heading mb-1">Data, Development & Software</h3>
+                    <p class="text-xs uppercase text-red-500 mb-3 tracking-wide">Full-time / Internship</p>
+                    <p class="text-gray-300 text-sm">
+                        Develop internal tools, dashboards, embedded logic, and analytics pipelines.
+                    </p>
+                </div>
+
+                <!-- 6 -->
+                <div class="border border-gray-800 rounded-2xl p-5 bg-black/60">
+                    <h3 class="text-lg font-heading mb-1">Marketing & Digital Media</h3>
+                    <p class="text-xs uppercase text-red-500 mb-3 tracking-wide">Full-time / Internship</p>
+                    <p class="text-gray-300 text-sm">
+                        Handle social media, branding, content, and digital communications.
+                    </p>
+                </div>
+
+                <!-- 7 -->
+                <div class="border border-gray-800 rounded-2xl p-5 bg-black/60">
+                    <h3 class="text-lg font-heading mb-1">Documentation & Business Administration</h3>
+                    <p class="text-xs uppercase text-red-500 mb-3 tracking-wide">Full-time / Internship</p>
+                    <p class="text-gray-300 text-sm">
+                        Support documentation, coordination, workflow design, and business operations.
+                    </p>
+                </div>
+
+            </div>
+
+            <p class="mt-6 text-gray-400 text-sm">
+                Don’t see your role? Select “Other / General Application” in the form.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- HOW TO APPLY -->
+    <section class="py-16 bg-black">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+
+            <h2 class="text-3xl font-heading font-bold mb-4">How to Apply</h2>
+
+            <p class="text-gray-300 mb-6 text-lg">
+                All applications are evaluated through our Google Form. Submit your resume and portfolio links.
+            </p>
+
+            <a href="https://forms.gle/J3LwxiCSYsJf2WwW8" target="_blank"
+               class="inline-block bg-red-700 hover:bg-red-800 text-white text-sm uppercase px-8 py-3 rounded-lg font-heading tracking-wide">
+               Go to Application Form
+            </a>
+
+            <p class="mt-4 text-xs text-gray-500">
+                Our team will reach out if your profile fits the current openings.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-white border-t border-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold uppercase font-heading">HybriMoto</h2>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-y-10 md:gap-x-12 border-b border-gray-800 pb-12">
+
+                <div class="footer-link-group flex flex-col items-start">
+                    <h3 class="text-lg font-heading">Models</h3>
+                    <a href="index.html">HMI BIKE</a>
+                </div>
+
+                <div class="footer-link-group flex flex-col items-start">
+                    <h3 class="text-lg font-heading">Accessories</h3>
+                    <a href="#">Riding Gear</a>
+                    <a href="#">Bike Covers</a>
+                </div>
+
+                <div class="footer-link-group flex flex-col items-start">
+                    <h3 class="text-lg font-heading">HybriMoto World</h3>
+                    <a href="#">Nearest Dealer</a>
+                    <a href="#">Community Forum</a>
+                    <a href="#">Technology Explained</a>
+                </div>
+
+                <div class="footer-link-group flex flex-col items-start">
+                    <h3 class="text-lg font-heading">Contacts</h3>
+                    <a href="#">Customer Care</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+
+                <div class="footer-link-group flex flex-col items-start">
+                    <h3 class="text-lg font-heading">Corporate</h3>
+                    <a href="career.html">Careers</a>
+                </div>
+
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center pt-8">
+
+                <div class="flex space-x-6 order-2 md:order-1 mt-6 md:mt-0">
+
+                    <a href="https://www.facebook.com/hybrimotoindia/following/" target="_blank"
+                       class="text-white hover:text-red-700 transition duration-200">
+                       <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/hybrimotoindia_official/?hl=en" target="_blank"
+                       class="text-white hover:text-red-700 transition duration-200">
+                       <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/@hybrimotoindia/featured" target="_blank"
+                       class="text-white hover:text-red-700 transition duration-200">
+                       <i class="fab fa-youtube"></i>
+                    </a>
+
+                    <!-- Updated Threads -->
+                    <a href="https://www.threads.com/@hybrimotoindia.official" target="_blank"
+                       class="text-white hover:text-red-700 transition duration-200">
+                       <i class="fab fa-threads"></i>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="https://linkedin.com/company/hybrimoto-india" target="_blank"
+                       class="text-white hover:text-red-700 transition duration-200">
+                       <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                    <!-- WhatsApp Channel -->
+                    <a href="https://whatsapp.com/channel/0029VajqEZiGk1Fnv0HMLq1Q" target="_blank"
+                       class="text-white hover:text-red-700 transition duration-200">
+                       <i class="fab fa-whatsapp"></i>
+                    </a>
+
+                </div>
+
+                <div class="text-gray-400 text-sm order-1 md:order-2">
+                    ©2025 HybriMoto India. All Rights Reserved.
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

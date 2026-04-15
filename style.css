@@ -85,7 +85,6 @@ h1, h2, h3, h4 {
     font-size: 2rem;
     line-height: 1;
 }
-
 .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -95,7 +94,7 @@ h1, h2, h3, h4 {
 
 .img-box {
     width: 100%;
-    height: 300px; 
+    height: 300px; /* 🔥 SAME HEIGHT FOR ALL */
     overflow: hidden;
     border-radius: 10px;
 }
@@ -103,8 +102,9 @@ h1, h2, h3, h4 {
 .img-box img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover; /* 🔥 makes all images equal size */
 }
+
 /* Footer specific styling */
 .footer-link-group h3 {
     font-weight: bold;

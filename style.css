@@ -143,7 +143,7 @@ h1, h2, h3, h4 {
 }
 .gallery {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 30px;
     padding: 40px 80px;
 }

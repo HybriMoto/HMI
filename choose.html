@@ -1,239 +1,271 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Careers – HybriMoto India</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="logo.png">
-    <link rel="shortcut icon" href="logo.png">
+    <link rel="icon" type="image/png" href="logo.png" />
+    <link rel="shortcut icon" href="logo.png" />
 
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Michroma&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        heading: ['Michroma', 'sans-serif'],
-                        body: ['Rajdhani', 'sans-serif'],
-                    },
-                }
-            }
-        }
+      tailwind.config = {
+          theme: {
+              extend: {
+                  fontFamily: {
+                      heading: ['Michroma', 'sans-serif'],
+                      body: ['Rajdhani', 'sans-serif'],
+                  },
+              }
+          }
+      }
 
-        body {
-            font-family: 'Rajdhani', sans-serif;
-            background-color: #000;
-        }
+      body {
+          font-family: 'Rajdhani', sans-serif;
+          background-color: #000;
+      }
 
-        html {
-            scroll-behavior: smooth;
-        }
+      html {
+          scroll-behavior: smooth;
+      }
 
-        .hero-overlay {
-            background: radial-gradient(circle at top, rgba(248,113,113,0.25), transparent 55%);
-        }
+      .hero-overlay {
+          background: radial-gradient(circle at top, rgba(248,113,113,0.25), transparent 55%);
+      }
     </style>
 
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body class="bg-black text-white">
-
+  <body class="bg-black text-white">
     <!-- NAVBAR -->
-    <header class="navbar fixed top-0 w-full z-50 bg-[#101010] shadow-xl flex justify-between items-center py-4 px-8 lg:px-16">
-    <div class="flex items-center">
-      <a href="index.html" class="logo flex items-center text-white font-bold text-xl no-underline font-heading transition duration-300 hover:text-red-600">
-        <img src="logo.png" alt="HybriMoto India Logo" class="h-10 mr-2">
-        <span>HybriMoto India</span>
-      </a>
-      <nav class="nav-links hidden lg:flex ml-12 space-x-8">
-        <a href="index.html"               class="text-white text-sm uppercase p-2 hover:text-red-600 transition duration-300">HMI BIKE</a>
-        <a href="index.html#about-us"      class="text-white text-sm uppercase p-2 hover:text-red-600 transition duration-300">About Us</a>
-        <a href="workshop.html"
-           class="text-white text-sm uppercase p-2 hover:text-red-600 transition duration-300">
-           Workshop
+    <header
+      class="navbar fixed top-0 w-full z-50 bg-[#101010] shadow-xl flex justify-between items-center py-4 px-8 lg:px-16"
+    >
+      <div class="flex items-center">
+        <a
+          href="index.html"
+          class="logo flex items-center text-white font-bold text-xl no-underline font-heading transition duration-300 hover:text-red-600"
+        >
+          <img src="logo.png" alt="HybriMoto India Logo" class="h-10 mr-2" />
+          <span>HybriMoto India</span>
         </a>
-        <a href="career.html"              class="text-white text-sm uppercase p-2 hover:text-red-600 transition duration-300">Careers</a>
-        <!-- Active page -->
-        <a href="choose.html"class="text-white text-sm uppercase p-2 border border-red-700 rounded-md text-red-600 font-semibold transition duration-300">Why Choose Us?</a>
-        <a href="contact.html" class="text-white text-sm uppercase p-2 hover:text-red-600 transition duration-300 block">Contact Us</a>  
-      </nav>
-    </div>
- 
-    
-  </header>
-     <section class="bg-black py-24 px-6 relative overflow-hidden">
+        <nav class="nav-links hidden lg:flex ml-12 space-x-8">
+          <a
+            href="index.html"
+            class="text-white text-sm uppercase p-2 hover:text-red-600 transition duration-300"
+            >HMI BIKE</a
+          >
+          <a
+            href="index.html#about-us"
+            class="text-white text-sm uppercase p-2 hover:text-red-600 transition duration-300"
+            >About Us</a
+          >
+          <a
+            href="workshop.html"
+            class="text-white text-sm uppercase p-2 hover:text-red-600 transition duration-300"
+          >
+            Workshop
+          </a>
+          <a
+            href="career.html"
+            class="text-white text-sm uppercase p-2 hover:text-red-600 transition duration-300"
+            >Careers</a
+          >
+          <!-- Active page -->
+          <a
+            href="choose.html"
+            class="text-white text-sm uppercase p-2 border border-red-700 rounded-md text-red-600 font-semibold transition duration-300"
+            >Why Choose Us?</a
+          >
+          <a
+            href="contact.html"
+            class="text-white text-sm uppercase p-2 hover:text-red-600 transition duration-300 block"
+            >Contact Us</a
+          >
+        </nav>
+      </div>
+    </header>
+    <section class="bg-black py-24 px-6 relative overflow-hidden">
+      <!-- Glow Background -->
+      <div class="absolute inset-0 bg-red-900/10 blur-3xl"></div>
 
-    <!-- Glow Background -->
-    <div class="absolute inset-0 bg-red-900/10 blur-3xl"></div>
-
-    <!-- Heading -->
-    <div class="relative z-10">
-        <h2 class="text-5xl md:text-6xl font-heading text-center mb-5 font-bold bg-gradient-to-r from-red-500 to-white bg-clip-text text-transparent">
-            Experience the HMI Advantage
+      <!-- Heading -->
+      <div class="relative z-10">
+        <h2
+          class="text-5xl md:text-6xl font-heading text-center mb-5 font-bold bg-gradient-to-r from-red-500 to-white bg-clip-text text-transparent"
+        >
+          Experience the HMI Advantage
         </h2>
 
         <p class="text-center text-gray-400 max-w-2xl mx-auto mb-20 text-lg">
-            Built with innovation, performance, and sustainability for the next generation of riders.
+          Built with innovation, performance, and sustainability for the next
+          generation of riders.
         </p>
 
-        <!-- Grid -->
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-            <!-- Card -->
-            <div class="bg-[#111] border border-gray-800 rounded-2xl p-8 hover:border-red-900 hover:scale-105 transition duration-300 shadow-lg">
-                <div class="text-5xl mb-5">⚡</div>
-                <h3 class="text-2xl font-bold mb-3">Improved Range</h3>
-                <p class="text-gray-400">
-                    Hybrid energy management eliminates range anxiety for long rides.
-                </p>
+        
+        
+          <!-- Grid -->
+          <div
+            class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          >
+            <!-- NEW 1 -->
+            <div
+              class="bg-[#111] border border-gray-800 rounded-2xl p-8 hover:border-red-600 hover:scale-105 transition duration-300 shadow-lg"
+            >
+              <div class="text-5xl mb-5 text-red-500">
+    <i class="fas fa-road"></i>
+</div>
+              <h3 class="text-2xl font-bold mb-3">Designed for Indian Roads</h3>
+              <p class="text-gray-400">
+                Engineered to handle varied road conditions while remaining
+                affordable.
+              </p>
             </div>
 
-            <!-- Card -->
-            <div class="bg-[#111] border border-gray-800 rounded-2xl p-8 hover:border-red-600 hover:scale-105 transition duration-300 shadow-lg">
-                <div class="text-5xl mb-5">⛽</div>
-                <h3 class="text-2xl font-bold mb-3">Superior Mileage</h3>
-                <p class="text-gray-400">
-                    Intelligent electric assist delivers exceptional fuel efficiency.
-                </p>
+            <!-- NEW 2 -->
+            <div
+              class="bg-[#111] border border-gray-800 rounded-2xl p-8 hover:border-red-600 hover:scale-105 transition duration-300 shadow-lg"
+            >
+              <div class="text-5xl mb-5 text-red-500">
+    <i class="fas fa-coins"></i>
+</div>
+              <h3 class="text-2xl font-bold mb-3">Low Running Cost</h3>
+              <p class="text-gray-400">
+                Reduced fuel consumption and lower operating expenses.
+              </p>
             </div>
 
-            <!-- Card -->
-            <div class="bg-[#111] border border-gray-800 rounded-2xl p-8 hover:border-red-600 hover:scale-105 transition duration-300 shadow-lg">
-                <div class="text-5xl mb-5">⚙️</div>
-                <h3 class="text-2xl font-bold mb-3">4 Drive Modes</h3>
-                <p class="text-gray-400">
-                    Switch seamlessly between ICE, EV, Assist, and Smart modes.
-                </p>
+            <!-- NEW 3 -->
+            <div
+              class="bg-[#111] border border-gray-800 rounded-2xl p-8 hover:border-red-600 hover:scale-105 transition duration-300 shadow-lg"
+            >
+              <div class="text-5xl mb-5">🔧</div>
+              <h3 class="text-2xl font-bold mb-3">Low Maintenance</h3>
+              <p class="text-gray-400">
+                Optimized hybrid powertrain designed for long-term reliability.
+              </p>
             </div>
 
-            <!-- Card -->
-            <div class="bg-[#111] border border-gray-800 rounded-2xl p-8 hover:border-red-600 hover:scale-105 transition duration-300 shadow-lg">
-                <div class="text-5xl mb-5">🏔️</div>
-                <h3 class="text-2xl font-bold mb-3">AWD Capability</h3>
-                <p class="text-gray-400">
-                    Enhanced traction and hill assist for challenging terrain.
-                </p>
+            <!-- NEW 4 -->
+            <div
+              class="bg-[#111] border border-gray-800 rounded-2xl p-8 hover:border-red-600 hover:scale-105 transition duration-300 shadow-lg"
+            >
+              <div class="text-5xl mb-5">🚀</div>
+              <h3 class="text-2xl font-bold mb-3">Instant Electric Torque</h3>
+              <p class="text-gray-400">
+                Strong low-speed acceleration from the BLDC hub motor.
+              </p>
             </div>
 
-            <!-- Card -->
-            <div class="bg-[#111] border border-gray-800 rounded-2xl p-8 hover:border-red-600 hover:scale-105 transition duration-300 shadow-lg">
-                <div class="text-5xl mb-5">🔄</div>
-                <h3 class="text-2xl font-bold mb-3">Self-Recharging</h3>
-                <p class="text-gray-400">
-                    Regenerative charging keeps the battery powered while riding.
-                </p>
+            <!-- NEW 5 -->
+            <div
+              class="bg-[#111] border border-gray-800 rounded-2xl p-8 hover:border-red-600 hover:scale-105 transition duration-300 shadow-lg"
+            >
+              <div class="text-5xl mb-5">📱</div>
+              <h3 class="text-2xl font-bold mb-3">
+                Smart TFT Display & Connectivity
+              </h3>
+              <p class="text-gray-400">
+                Real-time vehicle information, ride modes, battery status,
+                navigation, and smartphone connectivity.
+              </p>
             </div>
 
-            <!-- Card -->
-            <div class="bg-[#111] border border-gray-800 rounded-2xl p-8 hover:border-red-600 hover:scale-105 transition duration-300 shadow-lg">
-                <div class="text-5xl mb-5">🌿</div>
-                <h3 class="text-2xl font-bold mb-3">Eco-Friendly</h3>
-                <p class="text-gray-400">
-                    Cleaner rides with reduced emissions and sustainable performance.
-                </p>
+            <!-- NEW 6 -->
+            <div
+              class="bg-[#111] border border-gray-800 rounded-2xl p-8 hover:border-red-600 hover:scale-105 transition duration-300 shadow-lg"
+            >
+              <div class="text-5xl mb-5">🛡️</div>
+              <h3 class="text-2xl font-bold mb-3">Enhanced Safety Features</h3>
+              <p class="text-gray-400">
+                Multiple protection systems for rider / pillion &amp; vehicle
+                battery, controller, and powertrain.
+              </p>
             </div>
 
+            <!-- EXISTING -->
+            <div
+              class="bg-[#111] border border-gray-800 rounded-2xl p-8 hover:border-red-900 hover:scale-105 transition duration-300 shadow-lg"
+            >
+              <div class="text-5xl mb-5">⚡</div>
+              <h3 class="text-2xl font-bold mb-3">Improved Range</h3>
+              <p class="text-gray-400">
+                Hybrid energy management eliminates range anxiety for long
+                rides.
+              </p>
+            </div>
+
+            <div
+              class="bg-[#111] border border-gray-800 rounded-2xl p-8 hover:border-red-600 hover:scale-105 transition duration-300 shadow-lg"
+            >
+              <div class="text-5xl mb-5">⛽</div>
+              <h3 class="text-2xl font-bold mb-3">Superior Mileage</h3>
+              <p class="text-gray-400">
+                Intelligent electric assist delivers exceptional fuel
+                efficiency.
+              </p>
+            </div>
+
+            <div
+              class="bg-[#111] border border-gray-800 rounded-2xl p-8 hover:border-red-600 hover:scale-105 transition duration-300 shadow-lg"
+            >
+              <div class="text-5xl mb-5">⚙️</div>
+              <h3 class="text-2xl font-bold mb-3">4 Drive Modes</h3>
+              <p class="text-gray-400">
+                Switch seamlessly between ICE, EV, Assist, and Smart modes.
+              </p>
+            </div>
+
+            <div
+              class="bg-[#111] border border-gray-800 rounded-2xl p-8 hover:border-red-600 hover:scale-105 transition duration-300 shadow-lg"
+            >
+              <div class="text-5xl mb-5">🏔️</div>
+              <h3 class="text-2xl font-bold mb-3">AWD Capability</h3>
+              <p class="text-gray-400">
+                Enhanced traction and hill assist for challenging terrain.
+              </p>
+            </div>
+
+            <div
+              class="bg-[#111] border border-gray-800 rounded-2xl p-8 hover:border-red-600 hover:scale-105 transition duration-300 shadow-lg"
+            >
+              <div class="text-5xl mb-5">🔄</div>
+              <h3 class="text-2xl font-bold mb-3">Self-Recharging</h3>
+              <p class="text-gray-400">
+                Regenerative charging keeps the battery powered while riding.
+              </p>
+            </div>
+
+            <div
+              class="bg-[#111] border border-gray-800 rounded-2xl p-8 hover:border-red-600 hover:scale-105 transition duration-300 shadow-lg"
+            >
+              <div class="text-5xl mb-5">🌿</div>
+              <h3 class="text-2xl font-bold mb-3">Eco-Friendly</h3>
+              <p class="text-gray-400">
+                Cleaner rides with reduced emissions and sustainable
+                performance.
+              </p>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
-               
- 
-
-    <footer class="bg-black text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-
-
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-y-10 md:gap-x-12 border-b border-gray-800 pb-12">
-
-                <div class="footer-link-group flex flex-col items-start">
-                    <h3 class="text-lg font-heading">Models</h3>
-                    <a href="#">HMI H1 Commuter</a>
-                </div>
-
-                <div class="footer-link-group flex flex-col items-start">
-                    <h3 class="text-lg font-heading">Contacts</h3>
-                    <a href="#">Customer Care</a>
-                    <a href="#">+91 7338940180</a>
-                    <a href="#"> ceo@hybrimotoindia.com</a>
-                   
-                </div>
-
-                <div class="footer-link-group flex flex-col items-start">
-                    <h3 class="text-lg font-heading">Corporate</h3>
-                    <a href="career.html">Careers</a>
-                </div>
-            </div>
-
-            <div class="flex flex-col md:flex-row justify-between items-center pt-8">
-                <div class="flex space-x-6 order-2 md:order-1 mt-6 md:mt-0">
-                     <!-- WhatsApp Channel -->
-                    <a href="https://whatsapp.com/channel/0029VajqEZiGk1Fnv0HMLq1Q" target="_blank"
-                       class="text-white hover:text-red-700 transition duration-200"><i class="fab fa-whatsapp"></i></a>
-
-                    <a href="https://www.facebook.com/hybrimotoindia/following/" target="_blank"
-                       class="text-white hover:text-red-700 transition duration-200"><i class="fab fa-facebook-f"></i></a>
-
-                    <a href="https://www.instagram.com/hybrimotoindia_official/?hl=en" target="_blank"
-                       class="text-white hover:text-red-700 transition duration-200"><i class="fab fa-instagram"></i></a>
-                    
-                    <!-- Updated Threads -->
-                    <a href="https://www.threads.com/@hybrimotoindia.official" target="_blank"
-                       class="text-white hover:text-red-700 transition duration-200"><i class="fab fa-threads"></i></a>
-
-                    <!-- LinkedIn -->
-                    <a href="https://linkedin.com/company/hybrimoto-india" target="_blank"
-                       class="text-white hover:text-red-700 transition duration-200"><i class="fab fa-linkedin-in"></i></a>
-
-                    
-                    <a href="https://www.youtube.com/@hybrimotoindia/featured" target="_blank"
-                     class="text-white hover:text-red-700 transition duration-200"><i class="fab fa-youtube"></i></a>
-                   
-
-                </div>
-
-                <div class="text-gray-400 text-sm order-1 md:order-2">
-                    ©2025 HybriMoto India. All Rights Reserved.
-                </div>
-            </div>
-        </div>
-
-     
-    </footer>
-
-    <script>
-         let index = 0;
-        const slider = document.getElementById("slider");
-        const totalSlides = 9;
-
-        function showSlide() {
-        slider.style.transform = `translateX(-${index * 100}%)`;
-         }
-
-         function nextSlide() {
-           index = (index + 1) % totalSlides;
-            showSlide();
-         }
-
-           function prevSlide() {
-               index = (index - 1 + totalSlides) % totalSlides;
-                showSlide();
-           }
-
-         // Auto slide every 3 seconds
-            setInterval(() => {
-             nextSlide();
-            }, 3000);
-        </script>
-
-</body>
+      </div>
+    </section>
+  </body>
 </html>

@@ -1,277 +1,396 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HybriMoto - HMI BIKE</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="logo.png">
-    <link rel="shortcut icon" href="logo.png">
+    <link rel="icon" type="image/png" href="logo.png" />
+    <link rel="shortcut icon" href="logo.png" />
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
-    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Michroma&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        heading: ['Michroma', 'sans-serif'],
-                        body: ['Rajdhani', 'sans-serif'],
-                    },
-                }
-            }
-        }
+      tailwind.config = {
+          theme: {
+              extend: {
+                  fontFamily: {
+                      heading: ['Michroma', 'sans-serif'],
+                      body: ['Rajdhani', 'sans-serif'],
+                  }
+              }
+          }
+      }
 
-        body {
-            font-family: 'Rajdhani', sans-serif;
-            background-color: #000;
-        }
+      body {
+          font-family: 'Rajdhani', sans-serif;
+          background-color: #000;
+      }
 
-        .contact-glow {
-            background-color: #991b1b;
-            box-shadow: 0 0 10px rgba(220, 38, 38, 0.8), 0 0 20px rgba(220, 38, 38, 0.6), 0 0 40px rgba(220, 38, 38, 0.4);
-        }
+      .contact-glow {
+          background-color: #991b1b;
+          box-shadow: 0 0 10px rgba(220, 38, 38, 0.8), 0 0 20px rgba(220, 38, 38, 0.6), 0 0 40px rgba(220, 38, 38, 0.4);
+      }
 
-        .team-card {
-            background-color: #1a1a1a;
-            border: 1px solid #2d2d2d;
-        }
+      .team-card {
+          background-color: #1a1a1a;
+          border: 1px solid #2d2d2d;
+      }
 
-        .hero-section {
-            background-image: url('https://placehold.co/1600x900/111/FFF?text=HMI+BIKE+Image');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            color: white;
-            padding-top: 5rem;
-        }
+      .hero-section {
+          background-image: url('https://placehold.co/1600x900/111/FFF?text=HMI+BIKE+Image');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+          color: white;
+          padding-top: 5rem;
+      }
 
-        html {
-            scroll-behavior: smooth;
-        }
+      html {
+          scroll-behavior: smooth;
+      }
     </style>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="bg-black">
-
-    <header class="navbar fixed top-0 w-full z-50 bg-[#101010] shadow-xl flex justify-between items-center py-4 px-8 lg:px-16">
-        <div class="flex items-center">
-            <a href="index.html" class="logo flex items-center text-white font-bold text-xl no-underline font-heading transition duration-300 hover:text-red-600">
-                <img src="logo.png" alt="HybriMoto India Logo" class="h-10 mr-2">
-                <span>HybriMoto India</span>
-            </a>
-            <nav class="nav-links hidden lg:flex ml-12 space-x-8">
-                <a href="index.html" class="text-white text-sm uppercase p-2 border border-red-700 rounded-md text-red-600 font-semibold transition duration-300 highlighted">HMI BIKE</a>
-                <a href="#about-us" class="text-white text-sm uppercase p-2 hover:text-red-600 transition duration-300">About Us</a>
-                <a href="workshop.html" class="text-white text-sm uppercase p-2 hover:text-red-600 transition duration-300">Workshop</a>
-                <a href="career.html" class="text-white text-sm uppercase p-2 hover:text-red-600 transition duration-300">Careers</a>
-                <a href="choose.html" class="text-white text-sm uppercase p-2 hover:text-red-600 transition duration-300 block">Why Choose Us?</a>
-                <a href="contact.html" class="text-white text-sm uppercase p-2 hover:text-red-600 transition duration-300 block">Contact Us</a>
-            
-            </nav>
-        </div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-black">
+    <header
+      class="navbar fixed top-0 w-full z-50 bg-[#101010] shadow-xl flex justify-between items-center py-4 px-8 lg:px-16"
+    >
+      <div class="flex items-center">
+        <a
+          href="index.html"
+          class="logo flex items-center text-white font-bold text-xl no-underline font-heading transition duration-300 hover:text-red-600"
+        >
+          <img src="logo.png" alt="HybriMoto India Logo" class="h-10 mr-2" />
+          <span>HybriMoto India</span>
+        </a>
+        <nav class="nav-links hidden lg:flex ml-12 space-x-8">
+          <a
+            href="index.html"
+            class="text-white text-sm uppercase p-2 border border-red-700 rounded-md text-red-600 font-semibold transition duration-300 highlighted"
+            >HMI BIKE</a
+          >
+          <a
+            href="#about-us"
+            class="text-white text-sm uppercase p-2 hover:text-red-600 transition duration-300"
+            >About Us</a
+          >
+          <a
+            href="workshop.html"
+            class="text-white text-sm uppercase p-2 hover:text-red-600 transition duration-300"
+            >Workshop</a
+          >
+          <a
+            href="career.html"
+            class="text-white text-sm uppercase p-2 hover:text-red-600 transition duration-300"
+            >Careers</a
+          >
+          <a
+            href="choose.html"
+            class="text-white text-sm uppercase p-2 hover:text-red-600 transition duration-300 block"
+            >Why Choose Us?</a
+          >
+          <a
+            href="contact.html"
+            class="text-white text-sm uppercase p-2 hover:text-red-600 transition duration-300 block"
+            >Contact Us</a
+          >
+        </nav>
+      </div>
     </header>
 
     <div class="hero-section pt-20">
-        <div class="main-content flex flex-col justify-center items-center flex-grow">
-            <h1 class="text-5xl font-extrabold mb-4 font-heading">The Hybrid Electric Vehicle</h1>
-            <h2 class="text-2xl font-light font-heading">HMI H1 Commuter</h2>
-            <p class="text-xl font-extrabold text-White-600 mt-4 mb-8 uppercase tracking-widest font-body">
-                Powering Tomorrow, Driven by Innovation
-            </p>
-        </div>
+      <div
+        class="main-content flex flex-col justify-center items-center flex-grow"
+      >
+        <h1 class="text-5xl font-extrabold mb-4 font-heading">
+          The Hybrid Electric Vehicle
+        </h1>
+        <h2 class="text-2xl font-light font-heading">HMI H1 Commuter</h2>
+        <p
+          class="text-xl font-extrabold text-White-600 mt-4 mb-8 uppercase tracking-widest font-body"
+        >
+          Powering Tomorrow, Driven by Innovation
+        </p>
+      </div>
 
-        <div class="bottom-container">
-            <div class="stats-section flex justify-center space-x-10 sm:space-x-20 p-10 bg-gradient-to-t from-black via-black/80 to-transparent">
-                <div class="stat-item">
-                    <span class="value text-4xl font-extrabold font-heading">110 km/h</span>
-                    <span class="label text-sm text-gray-400">Top Speed</span>
-                </div>
-                <div class="stat-item">
-                    <span class="value text-4xl font-extrabold font-heading">180 km</span>
-                    <span class="label text-sm text-gray-400">ICE+EV Range</span>
-                </div>
-                <div class="stat-item">
-                    <span class="value text-4xl font-extrabold font-heading">30 %</span>
-                    <span class="label text-sm text-gray-400">Charge in 45 min*</span>
-                </div>
-            </div>
+      <div class="bottom-container">
+        <div
+          class="stats-section flex justify-center space-x-10 sm:space-x-20 p-10 bg-gradient-to-t from-black via-black/80 to-transparent"
+        >
+          <div class="stat-item">
+            <span class="value text-4xl font-extrabold font-heading"
+              >110 km/h</span
+            >
+            <span class="label text-sm text-gray-400">Top Speed</span>
+          </div>
+          <div class="stat-item">
+            <span class="value text-4xl font-extrabold font-heading"
+              >180 km</span
+            >
+            <span class="label text-sm text-gray-400">ICE+EV Range</span>
+          </div>
+          <div class="stat-item">
+            <span class="value text-4xl font-extrabold font-heading">30 %</span>
+            <span class="label text-sm text-gray-400">Charge in 45 min*</span>
+          </div>
         </div>
+      </div>
     </div>
 
     <section id="about-us" class="specs-container bg-[#101010] py-20">
-        <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 items-center">
-            <div class="lg:w-1/2">
-                <h3 class="text-red-600 uppercase text-lg font-semibold mb-3">Our Vision & Mission</h3>
-                <h2 class="text-5xl font-extrabold text-white mb-8 leading-tight font-heading">
-                    Next-Generation Hybrid Mobility.
-                </h2>
+      <div
+        class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 items-center"
+      >
+        <div class="lg:w-1/2">
+          <h3 class="text-red-600 uppercase text-lg font-semibold mb-3">
+            Our Vision & Mission
+          </h3>
+          <h2
+            class="text-5xl font-extrabold text-white mb-8 leading-tight font-heading"
+          >
+            Next-Generation Hybrid Mobility.
+          </h2>
 
-                <h4 class="text-2xl font-bold text-white mb-3 font-heading">About Us</h4>
-                <p class="text-gray-400 mb-6 text-xl">
-                    HybriMoto is a next-generation mobility startup focused on designing and building smart, eco-efficient Hybrid Motorcycles from the ground up. Our mission is to deliver a cost-effective, dual-powered two-wheeler that combines the strength of Internal Combustion with the precision of electric mobility—perfectly suited for urban and semi-urban consumers in India.
-                </p>
+          <h4 class="text-2xl font-bold text-white mb-3 font-heading">
+            About Us
+          </h4>
+          <p class="text-gray-400 mb-6 text-xl">
+            HybriMoto is a next-generation mobility startup focused on designing
+            and building smart, eco-efficient Hybrid Motorcycles from the ground
+            up. Our mission is to deliver a cost-effective, dual-powered
+            two-wheeler that combines the strength of Internal Combustion with
+            the precision of electric mobility—perfectly suited for urban and
+            semi-urban consumers in India.
+          </p>
 
-                <h4 class="text-2xl font-bold text-white mb-3 font-heading">Our Technologies</h4>
-                <p class="text-gray-400 text-xl">
-                    We are making an AWD (All-wheel Drive) Hybrid Motorcycle powered by twin motors and an IC engine. Our hybrid system includes four modes: ICE, EV, Assist, and Smart. The Smart mode automatically optimizes performance using driving conditions.
-                </p>
+          <h4 class="text-2xl font-bold text-white mb-3 font-heading">
+            Our Technologies
+          </h4>
+          <p class="text-gray-400 text-xl">
+            We are making an AWD (All-wheel Drive) Hybrid Motorcycle powered by
+            twin motors and an IC engine. Our hybrid system includes four modes:
+            ICE, EV, Assist, and Smart. The Smart mode automatically optimizes
+            performance using driving conditions.
+          </p>
 
-                <a href="choose.html"
-                   class="mt-8 inline-block bg-red-700 text-white text-sm uppercase px-6 py-3 rounded-lg hover:bg-red-800 transition duration-300 font-bold font-heading">
-                    Explore Our Technology
-                </a>
-            </div>
-
-            <div class="lg:w-1/2">
-                <img src="https://github.com/HybriMoto/HMI/blob/main/HMI_Concept.png?raw=true"
-                     class="rounded-xl shadow-2xl shadow-red-900 w-full h-auto object-cover">
-            </div>
+          <a
+            href="choose.html"
+            class="mt-8 inline-block bg-red-700 text-white text-sm uppercase px-6 py-3 rounded-lg hover:bg-red-800 transition duration-300 font-bold font-heading"
+          >
+            Explore Our Technology
+          </a>
         </div>
+
+        <div class="lg:w-1/2">
+          <img
+            src="https://github.com/HybriMoto/HMI/blob/main/HMI_Concept.png?raw=true"
+            class="rounded-xl shadow-2xl shadow-red-900 w-full h-auto object-cover"
+          />
+        </div>
+      </div>
     </section>
 
     <section class="specs-container bg-black py-20">
-        <h2 class="text-4xl font-bold text-center mb-12 text-white font-heading">Power & Performance</h2>
+      <h2 class="text-4xl font-bold text-center mb-12 text-white font-heading">
+        Power & Performance
+      </h2>
 
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-
-            <div class="spec-card">
-                <p class="text-3xl font-extrabold text-red-600 mb-2 font-heading">125cc</p>
-                <p class="text-lg font-semibold text-white mb-4">Internal Combustion Engine</p>
-                <p class="text-base text-gray-400">
-                    Air-cooled, 4-stroke for maximum durability and efficiency on long commutes.
-                </p>
-            </div>
-
-            <div class="spec-card">
-                <p class="text-3xl font-extrabold text-red-600 mb-2 font-heading">1.5 kW</p>
-                <p class="text-lg font-semibold text-white mb-4">Twin Electric Motors</p>
-                <p class="text-base text-gray-400">
-                    Integrated AWD motors for instant torque, quick acceleration, and hill assist.
-                </p>
-            </div>
-
-            <div class="spec-card">
-                <p class="text-3xl font-extrabold text-white mb-2 font-heading">12.5 Nm</p>
-                <p class="text-lg font-semibold text-white mb-4">Combined Max Torque</p>
-                <p class="text-base text-gray-400">
-                    Seamless power delivery across all operating modes.
-                </p>
-            </div>
-
-            <div class="spec-card">
-                <p class="text-3xl font-extrabold text-white mb-2 font-heading">9.6 BHP</p>
-                <p class="text-lg font-semibold text-white mb-4">ICE Peak Power</p>
-                <p class="text-base text-gray-400">
-                    Reliable power at 7500 rpm for highway cruising.
-                </p>
-            </div>
-
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+      >
+        <div class="spec-card">
+          <p class="text-3xl font-extrabold text-red-600 mb-2 font-heading">
+            125cc
+          </p>
+          <p class="text-lg font-semibold text-white mb-4">
+            Internal Combustion Engine
+          </p>
+          <p class="text-base text-gray-400">
+            Air-cooled, 4-stroke for maximum durability and efficiency on long
+            commutes.
+          </p>
         </div>
+
+        <div class="spec-card">
+          <p class="text-3xl font-extrabold text-red-600 mb-2 font-heading">
+            2.0 kW
+          </p>
+          <p class="text-lg font-semibold text-white mb-4">
+            Twin Electric Motors
+          </p>
+          <p class="text-base text-gray-400">
+            1.5 + 0.5 kW Integrated AWD means for instant torque, quick
+            acceleration, and hill assist.
+          </p>
+        </div>
+
+        <div class="spec-card">
+          <p class="text-3xl font-extrabold text-white mb-2 font-heading">
+            26.5  Nm
+          </p>
+          <p class="text-lg font-semibold text-white mb-4">
+            Combined Max Torque
+          </p>
+          <p class="text-base text-gray-400">
+            Seamless power delivery across all operating modes.
+          </p>
+        </div>
+
+        <div class="spec-card">
+          <p class="text-3xl font-extrabold text-white mb-2 font-heading">
+            9.6 BHP
+          </p>
+          <p class="text-lg font-semibold text-white mb-4">ICE Peak Power</p>
+          <p class="text-base text-gray-400">
+           Reliable power at 8000 rpm for highway cruising.
+          </p>
+        </div>
+      </div>
     </section>
 
-   
-
-    
-
     <footer class="bg-black text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div
+          class="grid grid-cols-2 md:grid-cols-5 gap-y-10 md:gap-x-12 border-b border-gray-800 pb-12"
+        >
+          <div class="footer-link-group flex flex-col items-start">
+            <h3 class="text-lg font-heading">Models</h3>
+            <a href="#">HMI H1 Commuter</a>
+          </div>
 
+          <div class="footer-link-group flex flex-col items-start">
+            <h3 class="text-lg font-heading">Contacts</h3>
+            <a href="contact.html">Contact Us</a>
+          </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-y-10 md:gap-x-12 border-b border-gray-800 pb-12">
-
-                <div class="footer-link-group flex flex-col items-start">
-                    <h3 class="text-lg font-heading">Models</h3>
-                    <a href="#">HMI H1 Commuter</a>
-                </div>
-
-                <div class="footer-link-group flex flex-col items-start">
-                    <h3 class="text-lg font-heading">Contacts</h3>
-                    <a href="#">Customer Care</a>
-                    <a href="#">+91 7338940180</a>
-                    <a href="#"> ceo@hybrimotoindia.com</a>
-                   
-                </div>
-
-                <div class="footer-link-group flex flex-col items-start">
-                    <h3 class="text-lg font-heading">Corporate</h3>
-                    <a href="career.html">Careers</a>
-                </div>
-            </div>
-
-            <div class="flex flex-col md:flex-row justify-between items-center pt-8">
-                <div class="flex space-x-6 order-2 md:order-1 mt-6 md:mt-0">
-                     <!-- WhatsApp Channel -->
-                    <a href="https://whatsapp.com/channel/0029VajqEZiGk1Fnv0HMLq1Q" target="_blank"
-                       class="text-white hover:text-red-700 transition duration-200"><i class="fab fa-whatsapp"></i></a>
-
-                    <a href="https://www.facebook.com/hybrimotoindia/following/" target="_blank"
-                       class="text-white hover:text-red-700 transition duration-200"><i class="fab fa-facebook-f"></i></a>
-
-                    <a href="https://www.instagram.com/hybrimotoindia_official/?hl=en" target="_blank"
-                       class="text-white hover:text-red-700 transition duration-200"><i class="fab fa-instagram"></i></a>
-                    
-                    <!-- Updated Threads -->
-                    <a href="https://www.threads.com/@hybrimotoindia.official" target="_blank"
-                       class="text-white hover:text-red-700 transition duration-200"><i class="fab fa-threads"></i></a>
-
-                    <!-- LinkedIn -->
-                    <a href="https://linkedin.com/company/hybrimoto-india" target="_blank"
-                       class="text-white hover:text-red-700 transition duration-200"><i class="fab fa-linkedin-in"></i></a>
-
-                    
-                    <a href="https://www.youtube.com/@hybrimotoindia/featured" target="_blank"
-                     class="text-white hover:text-red-700 transition duration-200"><i class="fab fa-youtube"></i></a>
-                   
-
-                </div>
-
-                <div class="text-gray-400 text-sm order-1 md:order-2">
-                    ©2025 HybriMoto India. All Rights Reserved.
-                </div>
-            </div>
+          <div class="footer-link-group flex flex-col items-start">
+            <h3 class="text-lg font-heading">Corporate</h3>
+            <a href="career.html">Careers</a>
+          </div>
         </div>
 
-     
+        <div
+          class="flex flex-col md:flex-row justify-between items-center pt-8"
+        >
+          <div class="flex space-x-6 order-2 md:order-1 mt-6 md:mt-0">
+            <!-- WhatsApp Channel -->
+            <a
+              href="https://whatsapp.com/channel/0029VajqEZiGk1Fnv0HMLq1Q"
+              target="_blank"
+              class="text-white hover:text-red-700 transition duration-200"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+
+            <a
+              href="https://www.facebook.com/hybrimotoindia/following/"
+              target="_blank"
+              class="text-white hover:text-red-700 transition duration-200"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+
+            <a
+              href="https://www.instagram.com/hybrimotoindia_official/?hl=en"
+              target="_blank"
+              class="text-white hover:text-red-700 transition duration-200"
+              ><i class="fab fa-instagram"></i
+            ></a>
+
+            <!-- Updated Threads -->
+            <a
+              href="https://www.threads.com/@hybrimotoindia.official"
+              target="_blank"
+              class="text-white hover:text-red-700 transition duration-200"
+              ><i class="fab fa-threads"></i
+            ></a>
+
+            <!-- LinkedIn -->
+            <a
+              href="https://linkedin.com/company/hybrimoto-india"
+              target="_blank"
+              class="text-white hover:text-red-700 transition duration-200"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+
+            <a
+              href="https://www.youtube.com/@hybrimotoindia/featured"
+              target="_blank"
+              class="text-white hover:text-red-700 transition duration-200"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+
+          <div class="text-gray-400 text-sm order-1 md:order-2">
+            ©2025 HybriMoto India. All Rights Reserved.
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const toggleButton = document.getElementById('contact-us-toggle');
-            const dropdown = document.getElementById('contact-dropdown');
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggleButton = document.getElementById("contact-us-toggle");
+        const dropdown = document.getElementById("contact-dropdown");
 
-            const toggleDropdown = (e) => {
-                if (e) e.preventDefault();
-                const isVisible = dropdown.classList.contains('opacity-100');
+        const toggleDropdown = (e) => {
+          if (e) e.preventDefault();
+          const isVisible = dropdown.classList.contains("opacity-100");
 
-                if (isVisible) {
-                    dropdown.classList.remove('opacity-100', 'scale-100', 'pointer-events-auto');
-                    dropdown.classList.add('opacity-0', 'scale-95', 'pointer-events-none');
-                } else {
-                    dropdown.classList.remove('opacity-0', 'scale-95', 'pointer-events-none');
-                    dropdown.classList.add('opacity-100', 'scale-100', 'pointer-events-auto');
-                }
-            };
+          if (isVisible) {
+            dropdown.classList.remove(
+              "opacity-100",
+              "scale-100",
+              "pointer-events-auto",
+            );
+            dropdown.classList.add(
+              "opacity-0",
+              "scale-95",
+              "pointer-events-none",
+            );
+          } else {
+            dropdown.classList.remove(
+              "opacity-0",
+              "scale-95",
+              "pointer-events-none",
+            );
+            dropdown.classList.add(
+              "opacity-100",
+              "scale-100",
+              "pointer-events-auto",
+            );
+          }
+        };
 
-            toggleButton.addEventListener('click', toggleDropdown);
+        toggleButton.addEventListener("click", toggleDropdown);
 
-            document.addEventListener('click', (e) => {
-                if (!toggleButton.contains(e.target) && !dropdown.contains(e.target) &&
-                    dropdown.classList.contains('opacity-100')) {
-                    toggleDropdown();
-                }
-            });
+        document.addEventListener("click", (e) => {
+          if (
+            !toggleButton.contains(e.target) &&
+            !dropdown.contains(e.target) &&
+            dropdown.classList.contains("opacity-100")
+          ) {
+            toggleDropdown();
+          }
         });
+      });
     </script>
-
-</body>
+  </body>
 </html>

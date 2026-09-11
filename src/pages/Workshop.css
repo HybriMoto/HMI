@@ -1,0 +1,378 @@
+/* =========================================================
+   WORKSHOP PAGE STYLING
+========================================================= */
+
+.workshop-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--hmi-black);
+  color: var(--hmi-white);
+  overflow-x: hidden;
+}
+
+/* WORKSHOP HERO */
+.workshop-hero {
+  position: relative;
+  width: 100%;
+  padding: clamp(90px, 12vw, 150px) 0 clamp(60px, 8vw, 100px);
+  background-color: var(--hmi-dark);
+  background-image: 
+    linear-gradient(180deg, rgba(8, 8, 10, 0.85) 0%, rgba(17, 17, 21, 0.95) 100%),
+    url('/images/grp1.jpeg');
+  background-size: cover;
+  background-position: center;
+  border-bottom: 1px solid var(--hmi-card-border);
+}
+
+.workshop-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 30%, rgba(255, 63, 67, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.workshop-hero-content h1 {
+  font-family: var(--hmi-font-heading);
+  font-size: clamp(42px, 6vw, 92px);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -2px;
+  margin: 0 0 1.5rem;
+  color: var(--hmi-white);
+}
+
+.hero-tagline {
+  max-width: 680px;
+  color: var(--hmi-light-gray);
+  font-size: clamp(16px, 1.8vw, 20px);
+  line-height: 1.6;
+  margin-bottom: 3.5rem;
+}
+
+/* WORKSHOP STATS STRIP */
+.workshop-stats {
+  display: flex;
+  align-items: center;
+  gap: clamp(30px, 5vw, 70px);
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  flex-wrap: wrap;
+}
+
+.w-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.w-stat strong {
+  font-family: var(--hmi-font-heading);
+  font-size: clamp(34px, 4.5vw, 52px);
+  font-weight: 800;
+  color: var(--hmi-red);
+  line-height: 1;
+}
+
+.w-stat span {
+  margin-top: 6px;
+  color: var(--hmi-gray);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* OVERVIEW & HIGHLIGHTS */
+.workshop-overview {
+  padding: clamp(80px, 10vw, 130px) 0;
+  background-color: var(--hmi-black);
+  border-bottom: 1px solid var(--hmi-card-border);
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 6vw, 80px);
+  align-items: start;
+}
+
+.overview-text h2 {
+  font-family: var(--hmi-font-heading);
+  font-size: clamp(36px, 4.5vw, 68px);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -1.5px;
+  margin: 0 0 2rem;
+}
+
+.overview-text p {
+  color: var(--hmi-gray);
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.highlight-card {
+  background: var(--hmi-card-bg);
+  border: 1px solid var(--hmi-card-border);
+  border-radius: 8px;
+  padding: 1.8rem;
+  transition: all 0.3s ease;
+}
+
+.highlight-card:hover {
+  border-color: var(--hmi-card-border-hover);
+  transform: translateY(-4px);
+}
+
+.hl-num {
+  color: var(--hmi-red);
+  font-family: var(--hmi-font-heading);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.highlight-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  color: var(--hmi-white);
+}
+
+.highlight-card p {
+  color: var(--hmi-gray);
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* CURRICULUM SECTION */
+.workshop-curriculum {
+  padding: clamp(80px, 10vw, 130px) 0;
+  background-color: var(--hmi-dark);
+  border-bottom: 1px solid var(--hmi-card-border);
+}
+
+.workshop-curriculum h2 {
+  font-family: var(--hmi-font-heading);
+  font-size: clamp(36px, 5vw, 68px);
+  font-weight: 800;
+  margin: 0 0 3.5rem;
+  letter-spacing: -1px;
+}
+
+.curriculum-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.curriculum-card {
+  background: var(--hmi-card-bg);
+  border: 1px solid var(--hmi-card-border);
+  border-radius: 8px;
+  padding: 2.2rem 1.8rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.curriculum-card:hover {
+  border-color: var(--hmi-card-border-hover);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 63, 67, 0.1);
+}
+
+.curr-icon {
+  font-size: 28px;
+  margin-bottom: 1.2rem;
+}
+
+.curriculum-card h3 {
+  font-family: var(--hmi-font-heading);
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 0.8rem;
+  color: var(--hmi-white);
+}
+
+.curriculum-card p {
+  color: var(--hmi-gray);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* WORKSHOP GALLERY (MAJOR VISUAL SECTION) */
+.workshop-gallery-section {
+  padding: clamp(80px, 10vw, 140px) 0;
+  background-color: var(--hmi-black);
+}
+
+.gallery-header {
+  margin-bottom: 3.5rem;
+}
+
+.gallery-header h2 {
+  font-family: var(--hmi-font-heading);
+  font-size: clamp(38px, 5.5vw, 76px);
+  font-weight: 800;
+  margin: 0 0 1rem;
+  letter-spacing: -1.5px;
+}
+
+.gallery-header p {
+  color: var(--hmi-gray);
+  font-size: 16px;
+}
+
+/* RESPONSIVE GALLERY GRID */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.gallery-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--hmi-card-border);
+  background-color: var(--hmi-dark);
+  cursor: pointer;
+  aspect-ratio: 4 / 3;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gallery-card:hover img {
+  transform: scale(1.08);
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(8, 8, 10, 0.95) 0%, rgba(8, 8, 10, 0.3) 50%, transparent 100%);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.gallery-card:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-category {
+  color: var(--hmi-red);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.gallery-item-title {
+  color: var(--hmi-white);
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 0 8px;
+  line-height: 1.3;
+}
+
+.zoom-icon {
+  color: var(--hmi-light-gray);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* CTA */
+.workshop-cta {
+  padding: clamp(90px, 10vw, 140px) 0;
+  background-color: var(--hmi-dark);
+  border-top: 1px solid var(--hmi-card-border);
+}
+
+.cta-label {
+  color: var(--hmi-red);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-bottom: 1.2rem;
+}
+
+.workshop-cta h2 {
+  font-family: var(--hmi-font-heading);
+  font-size: clamp(36px, 5vw, 72px);
+  font-weight: 800;
+  margin: 0 0 1.5rem;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.workshop-cta p {
+  color: var(--hmi-gray);
+  font-size: 18px;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+}
+
+.workshop-cta button {
+  padding: 1.1rem 2.5rem;
+  background-color: var(--hmi-red);
+  color: var(--hmi-white);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 8px 25px rgba(255, 63, 67, 0.3);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.workshop-cta button:hover {
+  background-color: #e03236;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(255, 63, 67, 0.5);
+}
+
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 1200px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+}

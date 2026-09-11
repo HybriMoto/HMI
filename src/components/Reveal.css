@@ -1,0 +1,31 @@
+.reveal-box {
+  opacity: 0;
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-direction-up {
+  transform: translateY(30px);
+}
+
+.reveal-direction-down {
+  transform: translateY(-30px);
+}
+
+.reveal-direction-left {
+  transform: translateX(30px);
+}
+
+.reveal-direction-right {
+  transform: translateX(-30px);
+}
+
+.reveal-direction-none {
+  transform: scale(0.97);
+}
+
+.reveal-box.reveal-active {
+  opacity: 1;
+  transform: translateY(0) translateX(0) scale(1);
+}
+

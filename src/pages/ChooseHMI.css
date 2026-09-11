@@ -1,0 +1,416 @@
+/* =========================================================
+   WHY CHOOSE HMI PAGE STYLING
+========================================================= */
+
+.choose-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--hmi-black);
+  color: var(--hmi-white);
+  overflow-x: hidden;
+}
+
+/* HERO */
+.choose-hero {
+  position: relative;
+  width: 100%;
+  padding: clamp(100px, 14vw, 170px) 0 clamp(60px, 8vw, 100px);
+  background-color: var(--hmi-dark);
+  border-bottom: 1px solid var(--hmi-card-border);
+  background-image: radial-gradient(circle at 20% 30%, rgba(255, 63, 67, 0.08) 0%, transparent 60%);
+}
+
+.choose-hero-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.choose-hero-content h1 {
+  font-family: var(--hmi-font-heading);
+  font-size: clamp(44px, 6.5vw, 98px);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -2px;
+  margin: 0 0 1.5rem;
+  color: var(--hmi-white);
+}
+
+.hero-subtext {
+  max-width: 680px;
+  color: var(--hmi-light-gray);
+  font-size: clamp(17px, 2vw, 22px);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* =========================================================
+   THREE HYBRID MODES INTERACTIVE SECTION
+========================================================= */
+.modes-interactive-section {
+  padding: clamp(70px, 9vw, 120px) 0;
+  background-color: #0c0c0c;
+  border-bottom: 1px solid var(--hmi-card-border);
+}
+
+.modes-selector-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+  margin-bottom: 2.5rem;
+}
+
+.mode-card {
+  background: var(--hmi-card-bg);
+  border: 1px solid var(--hmi-card-border);
+  border-radius: 8px;
+  padding: 2.2rem 1.8rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mode-card:hover {
+  border-color: rgba(255, 63, 67, 0.5);
+  transform: translateY(-4px);
+}
+
+.mode-card.active {
+  border-color: var(--hmi-red);
+  background: linear-gradient(180deg, #1d1d1d 0%, #151515 100%);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.6), 0 0 30px rgba(255, 63, 67, 0.22);
+}
+
+.mode-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.4rem;
+}
+
+.mode-icon {
+  font-size: 24px;
+}
+
+.mode-badge {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--hmi-gray);
+  transition: all 0.3s ease;
+}
+
+.mode-card.active .mode-badge {
+  background: var(--hmi-red);
+  color: var(--hmi-white);
+}
+
+.mode-card h3 {
+  font-family: var(--hmi-font-heading);
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: var(--hmi-white);
+  margin: 0 0 0.4rem;
+}
+
+.mode-card.active h3 {
+  color: var(--hmi-white);
+}
+
+.mode-card h4 {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--hmi-red);
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.mode-card p {
+  font-size: 14px;
+  color: var(--hmi-gray);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.mode-indicator-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: transparent;
+  transition: background 0.3s ease;
+}
+
+.mode-card.active .mode-indicator-bar {
+  background: var(--hmi-red);
+}
+
+/* ACTIVE MODE DETAIL PANEL */
+.mode-detail-panel {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 2.5rem;
+  background: #181818;
+  border: 1px solid var(--hmi-red);
+  border-radius: 8px;
+  padding: 2.5rem 3rem;
+  animation: panelFade 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes panelFade {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.detail-mode-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  color: var(--hmi-red);
+  margin-bottom: 1rem;
+}
+
+.detail-panel-left h3 {
+  font-family: var(--hmi-font-heading);
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--hmi-white);
+  margin: 0 0 1rem;
+  letter-spacing: -0.5px;
+}
+
+.detail-description {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #cccccc;
+  margin: 0;
+}
+
+.detail-panel-right {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  padding-left: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.detail-panel-right h4 {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: var(--hmi-gray);
+  margin: 0 0 1.2rem;
+}
+
+.detail-panel-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.detail-panel-right li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--hmi-white);
+}
+
+.spec-check {
+  color: var(--hmi-red);
+  font-size: 16px;
+  font-weight: 800;
+}
+
+/* FEATURES GRID SECTION */
+.choose-grid-section {
+  padding: clamp(80px, 10vw, 140px) 0;
+  background-color: var(--hmi-black);
+}
+
+.choose-header {
+  margin-bottom: 3.5rem;
+}
+
+.choose-header h2 {
+  font-family: var(--hmi-font-heading);
+  font-size: clamp(38px, 5vw, 72px);
+  font-weight: 800;
+  margin: 0 0 1rem;
+  letter-spacing: -1px;
+}
+
+.choose-header p {
+  color: var(--hmi-gray);
+  font-size: 16px;
+}
+
+/* 4 COLUMNS DESKTOP, 2 TABLET, 1 MOBILE */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.feature-card {
+  background: var(--hmi-card-bg);
+  border: 1px solid var(--hmi-card-border);
+  border-radius: 8px;
+  padding: 2.2rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+
+.feature-card:hover {
+  border-color: var(--hmi-card-border-hover);
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.4), 0 0 25px rgba(255, 63, 67, 0.12);
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.8rem;
+}
+
+.card-num {
+  font-family: var(--hmi-font-heading);
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--hmi-red);
+  letter-spacing: 2px;
+}
+
+.card-badge {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: var(--hmi-gray);
+  padding: 4px 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.feature-card h3 {
+  font-family: var(--hmi-font-heading);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 0.8rem;
+  color: var(--hmi-white);
+}
+
+.feature-card p {
+  color: var(--hmi-gray);
+  font-size: 14px;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* CTA */
+.choose-cta {
+  padding: clamp(90px, 10vw, 150px) 0;
+  background-color: var(--hmi-dark);
+  border-top: 1px solid var(--hmi-card-border);
+}
+
+.cta-label {
+  color: var(--hmi-red);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-bottom: 1.2rem;
+}
+
+.choose-cta h2 {
+  font-family: var(--hmi-font-heading);
+  font-size: clamp(38px, 5.5vw, 76px);
+  font-weight: 800;
+  margin: 0 0 2rem;
+  letter-spacing: -1.5px;
+}
+
+.choose-cta button {
+  padding: 1.1rem 2.5rem;
+  background-color: var(--hmi-red);
+  color: var(--hmi-white);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 8px 25px rgba(255, 63, 67, 0.3);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.choose-cta button:hover {
+  background-color: #e03236;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(255, 63, 67, 0.5);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1300px) {
+  .features-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .modes-selector-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mode-detail-panel {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+
+  .detail-panel-right {
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-left: 0;
+    padding-top: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}

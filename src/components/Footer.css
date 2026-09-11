@@ -1,0 +1,142 @@
+/* =========================================================
+   FOOTER STYLING
+========================================================= */
+
+.footer {
+  background-color: var(--hmi-black);
+  color: var(--hmi-white);
+  border-top: 1px solid var(--hmi-card-border);
+  padding-top: clamp(60px, 8vw, 100px);
+  padding-bottom: 2.5rem;
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: clamp(40px, 6vw, 80px);
+  margin-bottom: clamp(50px, 6vw, 80px);
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+}
+
+.footer-logo-link img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+
+.footer-brand-title {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.footer-brand-title strong {
+  font-family: var(--hmi-font-heading);
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--hmi-white);
+}
+
+.footer-brand-title span {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--hmi-red);
+}
+
+.footer-brand h2 {
+  font-family: var(--hmi-font-heading);
+  font-size: clamp(28px, 3.5vw, 42px);
+  font-weight: 800;
+  line-height: 1;
+  margin: 0 0 1.2rem;
+}
+
+.footer-brand h2 span {
+  color: var(--hmi-red);
+}
+
+.footer-brand p {
+  color: var(--hmi-gray);
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 440px;
+  margin: 0;
+}
+
+.footer-links-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.footer-nav-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-heading {
+  color: var(--hmi-red);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.footer-nav-col a {
+  color: var(--hmi-light-gray);
+  font-size: 13px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-nav-col a:hover {
+  color: var(--hmi-white);
+}
+
+.footer-location {
+  color: var(--hmi-gray);
+  font-size: 13px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--hmi-gray);
+  font-size: 12px;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .footer-main {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-links-grid {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

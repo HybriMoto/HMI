@@ -1,0 +1,259 @@
+/* =========================================================
+   ABOUT PAGE STYLING
+========================================================= */
+
+.about-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--hmi-black);
+  color: var(--hmi-white);
+  overflow-x: hidden;
+}
+
+/* HERO */
+.about-hero {
+  position: relative;
+  width: 100%;
+  padding: clamp(100px, 14vw, 170px) 0 clamp(60px, 8vw, 100px);
+  background-color: var(--hmi-dark);
+  border-bottom: 1px solid var(--hmi-border);
+}
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.about-hero-content h1 {
+  font-family: var(--hmi-font-heading);
+  font-size: clamp(44px, 6.5vw, 98px);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -2px;
+  margin: 0 0 1.5rem;
+  color: var(--hmi-white);
+}
+
+.hero-subtext {
+  max-width: 680px;
+  color: var(--hmi-muted);
+  font-size: clamp(17px, 2vw, 22px);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* WHO WE ARE */
+.about-introduction {
+  padding: clamp(80px, 10vw, 140px) 0;
+  background-color: var(--hmi-black);
+  border-bottom: 1px solid var(--hmi-border);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 80px 1fr minmax(320px, 0.85fr);
+  gap: clamp(30px, 5vw, 60px);
+  align-items: start;
+}
+
+.about-intro-text h2 {
+  font-family: var(--hmi-font-heading);
+  font-size: clamp(38px, 5vw, 76px);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -1.5px;
+  margin: 0 0 2rem;
+  color: var(--hmi-white);
+}
+
+.about-intro-text p {
+  color: var(--hmi-muted);
+  font-size: clamp(15px, 1.5vw, 18px);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.about-image-frame {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--hmi-border);
+  background-color: var(--hmi-dark);
+}
+
+.about-image-frame img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.about-image-frame:hover img {
+  transform: scale(1.04);
+}
+
+/* TECHNOLOGY */
+.about-technology {
+  padding: clamp(80px, 10vw, 140px) 0;
+  background-color: var(--hmi-dark);
+  border-bottom: 1px solid var(--hmi-border);
+}
+
+.tech-header h2 {
+  font-family: var(--hmi-font-heading);
+  font-size: clamp(38px, 5vw, 72px);
+  font-weight: 800;
+  margin: 0 0 1rem;
+  letter-spacing: -1px;
+}
+
+.tech-header p {
+  color: var(--hmi-muted);
+  font-size: 16px;
+  margin-bottom: 3.5rem;
+}
+
+.tech-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.tech-card {
+  background: var(--hmi-darker);
+  border: 1px solid var(--hmi-border);
+  border-radius: 8px;
+  padding: 2.2rem 1.8rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tech-card:hover {
+  border-color: var(--hmi-red);
+  transform: translateY(-5px);
+}
+
+.tech-badge {
+  color: var(--hmi-red);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.tech-card h3 {
+  font-family: var(--hmi-font-heading);
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0.4rem 0 1rem;
+  color: var(--hmi-white);
+}
+
+.tech-card p {
+  color: var(--hmi-muted);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.tech-showcase-image {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--hmi-border);
+  max-height: 480px;
+}
+
+.tech-showcase-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.showcase-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(17, 17, 17, 0.95) 0%, rgba(17, 17, 17, 0.25) 50%, transparent 100%);
+  display: flex;
+  align-items: flex-end;
+  padding: 2.5rem;
+}
+
+.showcase-details h4 {
+  font-family: var(--hmi-font-heading);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--hmi-white);
+  letter-spacing: 1px;
+  margin: 0 0 6px;
+}
+
+.showcase-details p {
+  color: var(--hmi-muted);
+  font-size: 14px;
+  margin: 0;
+}
+
+/* CTA */
+.about-cta {
+  padding: clamp(90px, 10vw, 150px) 0;
+  background-color: var(--hmi-red);
+  color: var(--hmi-white);
+}
+
+.cta-label {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-bottom: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.about-cta h2 {
+  font-family: var(--hmi-font-heading);
+  font-size: clamp(40px, 6vw, 84px);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -2px;
+  margin: 0 0 2.5rem;
+}
+
+.about-cta button {
+  padding: 1.1rem 2.5rem;
+  background-color: var(--hmi-black);
+  color: var(--hmi-white);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.about-cta button:hover {
+  transform: translateY(-3px);
+  background-color: var(--hmi-darker);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .about-grid {
+    grid-template-columns: 50px 1fr;
+  }
+  .about-image-frame {
+    grid-column: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .showcase-overlay {
+    padding: 1.5rem;
+  }
+}

@@ -162,11 +162,12 @@ function Home() {
 
               <Reveal delay={150}>
                 <p>
-                  HybriMoto is a next-generation mobility startup focused on designing and building smart, eco-efficient Hybrid Motorcycles from the ground up.
+                  HybriMoto India is a technology-driven mobility startup focused on developing practical hybrid solutions for motorcycles. Our current focus is hybrid retrofitting — integrating electric propulsion with existing petrol motorcycles to create a dual-power mobility platform.
                 </p>
                 <p>
-                  The mission is to deliver a cost-effective, dual-powered two-wheeler combining the strength of Internal Combustion with electric mobility, suited for urban and semi-urban consumers in India.
+                  By combining existing internal-combustion technology with electric propulsion, HybriMoto aims to develop a practical pathway toward cleaner and more efficient mobility without requiring users to immediately replace their existing motorcycles.
                 </p>
+                <p>Our long-term vision extends beyond retrofit technology toward intelligent hybrid systems and proprietary HybriMoto motorcycles.</p>
               </Reveal>
             </div>
 
@@ -313,4 +314,4 @@ function Home() {
 }
 
 export default Home;
-
+
